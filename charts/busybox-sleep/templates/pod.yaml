@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busybox-{{ .Release.Name }}
+spec:
+  containers:
+  - command:
+    - sh
+    - -c
+    - while true; do echo hello; sleep {{ .Values.sleepSecs }}; done
+    - --dry-run=client
+    - -o
+    - yaml
+    image: busybox
+    imagePullPolicy: IfNotPresent
+    name: busyboxtest
