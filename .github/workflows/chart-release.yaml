@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           fetch-depth: 0
 
@@ -24,5 +26,5 @@ jobs:
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.5.0
-        with:
-          CR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          CR_TOKEN: $GITHUB_TOKEN"
