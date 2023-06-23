@@ -3,6 +3,21 @@ entries:
   busybox-sleep:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2023-06-23T15:43:09.581423266Z"
+    description: Busybox Sleep
+    digest: 0286688acde2d6d0925f446122538c9455665ce995b0e886e4cd92aa0975450a
+    keywords:
+    - busybox
+    maintainers:
+    - name: Nirmata
+      url: https://nirmata.com/
+    name: busybox-sleep
+    type: application
+    urls:
+    - https://github.com/pns-nirmata/test-helm-release-branches/releases/download/busybox-sleep-0.1.1/busybox-sleep-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2023-06-23T15:14:29.288314183Z"
     description: Busybox Sleep
     digest: 50fc878c32b722d5a4dba5905cc68a4f4bb8ff1844a3ca3b8cee84e055b3f13a
@@ -16,4 +31,4 @@ entries:
     urls:
     - https://github.com/pns-nirmata/test-helm-release-branches/releases/download/busybox-sleep-0.1.0/busybox-sleep-0.1.0.tgz
     version: 0.1.0
-generated: "2023-06-23T15:14:29.288319183Z"
+generated: "2023-06-23T15:43:09.581472369Z"
