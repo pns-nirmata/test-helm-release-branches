@@ -2,7 +2,7 @@ apiVersion: v2
 name: busybox-sleep
 description: Busybox Sleep
 type: application
-version: 0.1.2
+version: 0.1.1
 appVersion: 0.1.0
 keywords:
   - busybox
